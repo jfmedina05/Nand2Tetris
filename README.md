@@ -1,6 +1,6 @@
 # Nand2Tetris
 
-A comprehensive exploration of computer systems engineering through the Nand2Tetris curriculum, building a modern computer system from first principles.
+A comprehensive exploration of computer systems engineering through the Nand2Tetris curriculum, building a complete computer system from first principles.
 
 ---
 
@@ -8,41 +8,52 @@ A comprehensive exploration of computer systems engineering through the Nand2Tet
 
 This repository contains my implementations and project work from the Nand2Tetris course and textbook, *The Elements of Computing Systems* by Noam Nisan and Shimon Schocken.
 
-The curriculum guides students through the construction of a complete computer system, beginning with elementary NAND gates and progressing through hardware design, machine language, virtual machines, compilers, operating systems, and application development.
+Beginning with a single NAND gate, the curriculum progressively develops every major layer of a modern computing system, including digital logic, arithmetic circuits, memory hierarchies, computer architecture, assembly language, virtual machines, compilers, operating systems, and application software.
 
-This project emphasizes understanding how abstraction layers interact within a computing system by building each layer from the ground up. Rather than treating computers as black boxes, Nand2Tetris exposes the underlying hardware and software infrastructure that powers modern computing systems.
+Rather than treating computers as black boxes, Nand2Tetris demonstrates how complex computing systems emerge from a hierarchy of abstractions built on simple hardware and software foundations.
+
+---
+
+## Project Progress
+
+| Project | Topic | Status |
+|----------|--------|----------|
+| Project 1 | Boolean Logic | ✅ Complete |
+| Project 2 | Boolean Arithmetic | ✅ Complete |
+| Project 3 | Sequential Logic & Memory | ✅ Complete |
+| Project 4 | Machine Language Programming | ✅ Complete |
+| Project 5 | Computer Architecture | ✅ Complete |
+| Project 6 | Assembler | ✅ Complete |
+| Project 7 | Virtual Machine I: Stack Arithmetic | ✅ Complete |
+| Project 8 | Virtual Machine II: Program Control | 🔄 In Progress |
+| Project 9 | High-Level Language | ⏳ Planned |
+| Project 10 | Compiler I | ⏳ Planned |
+| Project 11 | Compiler II | ⏳ Planned |
+| Project 12 | Operating System | ⏳ Planned |
 
 ---
 
 ## Learning Objectives
 
-Through these projects, I developed experience in:
+Through these projects, I have developed experience in:
 
-- Digital logic design
-- Hardware Description Language
-- Computer architecture
-- Assembly language programming
-- Virtual machine implementation
-- Compiler construction
-- Operating system concepts
-- Software abstraction layers
-- Systems programming
-- End-to-end computer system design
-
----
-
-## Course Architecture
-
-The Nand2Tetris curriculum is divided into two major components:
-
-1. **Part I — Hardware**
-2. **Part II — Software**
+- Digital Logic Design
+- Hardware Description Language (HDL)
+- Computer Architecture
+- Assembly Language Programming
+- Memory Systems
+- Virtual Machine Implementation
+- Compiler Fundamentals
+- Operating System Concepts
+- Systems Programming
+- Software Abstraction Layers
+- End-to-End Computer System Design
 
 ---
 
-## Part I — Hardware
+## System Architecture Journey
 
-Beginning with the NAND gate, Part I focuses on progressively constructing the hardware platform of the Hack computer.
+The Nand2Tetris curriculum follows the complete computing stack.
 
 ```text
 NAND Gates
@@ -51,105 +62,150 @@ Logic Gates
     ↓
 Arithmetic Circuits
     ↓
-Memory Components
+Memory Systems
     ↓
 CPU
     ↓
 Hack Computer
-```
-
-### Projects Included
-
-- Project 01 — Boolean Logic
-- Project 02 — Boolean Arithmetic
-- Project 03 — Memory
-- Project 04 — Machine Language
-- Project 05 — Computer Architecture
-- Project 06 — Assembler
-
-These projects culminate in the implementation of a complete Hack computer platform.
-
----
-
-## Part II — Software
-
-Part II focuses on building the software hierarchy that executes on the Hack computer.
-
-```text
-Jack Program
+    ↓
+Assembly Programs
+    ↓
+Assembler
+    ↓
+Virtual Machine
     ↓
 Compiler
     ↓
-VM Code
-    ↓
-VM Translator
-    ↓
-Hack Assembly
-    ↓
-Machine Code
-    ↓
-Hack Computer
+Operating System
 ```
 
-### Projects Included
+Each project builds upon the previous one, ultimately resulting in a fully functional computer system and software stack.
 
-- Project 07 — Virtual Machine I
-- Project 08 — Virtual Machine II
-- Project 09 — High-Level Language
-- Project 10 — Compiler I
-- Project 11 — Compiler II
-- Project 12 — Operating System
+---
 
-These projects demonstrate how modern software stacks are translated and executed on hardware systems.
+## Hardware Projects
+
+### Project 1 — Boolean Logic
+Implemented fundamental logic gates and routing components using only NAND gates.
+
+Key Components:
+- Not
+- And
+- Or
+- Xor
+- Mux / DMux
+- Multi-bit logic circuits
+
+---
+
+### Project 2 — Boolean Arithmetic
+Built arithmetic circuits and the Hack ALU.
+
+Key Components:
+- HalfAdder
+- FullAdder
+- Add16
+- Inc16
+- ALU
+
+---
+
+### Project 3 — Sequential Logic & Memory
+Constructed the memory hierarchy for the Hack computer.
+
+Key Components:
+- Bit
+- Register
+- RAM8
+- RAM64
+- RAM512
+- RAM4K
+- RAM16K
+- Program Counter
+
+---
+
+### Project 4 — Machine Language Programming
+Developed Hack assembly programs that execute directly on the hardware platform.
+
+Programs:
+- Mult.asm
+- Fill.asm
+
+Concepts:
+- Assembly Language
+- Memory-Mapped I/O
+- Program Control Flow
+
+---
+
+### Project 5 — Computer Architecture
+Integrated CPU, memory, and I/O devices into a complete Hack computer.
+
+Key Components:
+- CPU
+- Memory
+- Computer
+
+---
+
+## Software Projects
+
+### Project 6 — Assembler
+Built a two-pass assembler that translates Hack assembly language into machine code.
+
+Concepts:
+- Parsing
+- Symbol Tables
+- Binary Translation
+- Language Processing
+
+---
+
+### Project 7 — Virtual Machine I
+Developed a VM Translator that converts stack-based VM commands into Hack assembly language.
+
+Features:
+- Stack Arithmetic
+- Memory Access Commands
+- VM Translation
+- Assembly Generation
 
 ---
 
 ## Technical Concepts Demonstrated
 
 ### Digital Logic
-
-- NAND-based circuit construction
-- Combinational logic
-- Sequential logic
-- Multiplexers and demultiplexers
+- NAND-based Circuit Construction
+- Combinational Logic
+- Sequential Logic
+- Multiplexers & Demultiplexers
 - Arithmetic Logic Units
-- Registers and memory elements
+- Registers & Memory
 
 ### Computer Architecture
-
-- CPU design
-- Memory systems
-- Registers
-- Instruction execution
-- Datapath design
-- Control logic
-- Machine language execution
+- CPU Design
+- Memory Hierarchies
+- Program Counters
+- Instruction Execution
+- Datapath Design
+- Memory-Mapped I/O
 
 ### Systems Programming
-
-- Assembly language
-- Stack-based virtual machines
-- Memory management
-- Input/output systems
-- Low-level software execution
-
-### Compiler Design
-
-- Lexical analysis
+- Assembly Language
+- Virtual Machines
 - Parsing
-- Syntax analysis
-- Code generation
-- Virtual machine translation
-- High-level language compilation
+- Symbol Resolution
+- Memory Management
+- Software Translation
 
-### Operating Systems
-
-- Memory allocation
-- Graphics primitives
-- Mathematical libraries
-- String manipulation
-- I/O services
-- System-level abstractions
+### Compiler & Language Systems
+- Lexical Analysis
+- Parsing
+- Syntax Analysis
+- Code Generation
+- VM Translation
+- Language Abstraction
 
 ---
 
@@ -157,18 +213,18 @@ These projects demonstrate how modern software stacks are translated and execute
 
 ```text
 Nand2Tetris/
-├── Project 01 - Boolean Logic
-├── Project 02 - Boolean Arithmetic
-├── Project 03 - Memory
-├── Project 04 - Machine Language
-├── Project 05 - Computer Architecture
-├── Project 06 - Assembler
-├── Project 07 - VM I
-├── Project 08 - VM II
-├── Project 09 - High-Level Language
-├── Project 10 - Compiler I
-├── Project 11 - Compiler II
-├── Project 12 - Operating System
+├── Project_1/
+├── Project_2/
+├── Project_3/
+├── Project_4/
+├── Project_5/
+├── Project_6/
+├── Project_7/
+├── Project_8/
+├── Project_9/
+├── Project_10/
+├── Project_11/
+├── Project_12/
 └── README.md
 ```
 
@@ -177,23 +233,21 @@ Nand2Tetris/
 ## Skills Developed
 
 - Computer Engineering
-- Computer Architecture
 - Digital Systems Design
+- Computer Architecture
 - Hardware Description Languages
 - Assembly Programming
-- Compiler Construction
-- Operating Systems
 - Systems Programming
+- Compiler Construction
+- Virtual Machine Design
+- Operating Systems
 - Software Architecture
 - Algorithm Design
-- Abstraction Layer Design
 
 ---
 
 ## Why This Project Matters
 
-Many computer science and engineering courses focus on individual layers of computing systems. Nand2Tetris provides a unique opportunity to understand how those layers connect by constructing a complete computer system from the ground up.
+Most engineering courses focus on individual layers of computing systems. Nand2Tetris is unique because it connects every major abstraction layer into a single cohesive project.
 
-Beginning with NAND gates and ending with a functioning software stack, this project demonstrates how modern computing systems emerge from a hierarchy of abstractions working together.
-
-For computer engineering students, it serves as one of the most comprehensive introductions to the relationship between hardware, software, and system architecture.
+Beginning with NAND gates and progressing toward compilers and operating systems, this repository demonstrates how modern computing systems are built from the ground up. It provides a comprehensive understanding of the relationship between hardware, software, and system architecture, making it one of the most valuable computer engineering projects for understanding how computers actually work.
