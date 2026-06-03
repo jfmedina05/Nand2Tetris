@@ -1,0 +1,17 @@
+/**
+ *Or gate:
+ *Jaiden Medina
+ *out = 1 if a or b == 1)
+ *	Otherwise 0
+ */
+
+CHIP Or {
+    IN a, b;
+    OUT out;
+
+    PARTS:
+       Not(in=a, out=notA);
+       Not(in=b, out=notB);
+       Nand(a=notA, b=notB, out=out);
+}
+
