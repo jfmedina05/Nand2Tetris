@@ -1,5 +1,21 @@
 # Nand2Tetris
 
+<p align="center">
+  <img alt="Python" src="https://img.shields.io/badge/Python-3776AB?logo=python&logoColor=white">
+  <img alt="Assembly" src="https://img.shields.io/badge/Assembly-525252?logoColor=white">
+  <img alt="HDL" src="https://img.shields.io/badge/HDL-Hardware%20Description-FF6F00?logoColor=white">
+  <img alt="Nand2Tetris" src="https://img.shields.io/badge/Nand2Tetris-Computer%20Systems-6f42c1?logoColor=white">
+  <img alt="Digital Logic" src="https://img.shields.io/badge/Digital%20Logic-NAND%20Gates-1E4D8C?logoColor=white">
+  <img alt="Computer Architecture" src="https://img.shields.io/badge/Computer%20Architecture-Hack%20CPU-2C8EBB?logoColor=white">
+  <img alt="Hack Assembly" src="https://img.shields.io/badge/Hack%20Assembly-Machine%20Language-525252?logoColor=white">
+  <img alt="Assembler" src="https://img.shields.io/badge/Assembler-Two--Pass%20Translation-B30B00?logoColor=white">
+  <img alt="Virtual Machine" src="https://img.shields.io/badge/Virtual%20Machine-Stack%20Arithmetic-4B0082?logoColor=white">
+  <img alt="Compiler Design" src="https://img.shields.io/badge/Compiler%20Design-Language%20Systems-6f42c1?logoColor=white">
+  <img alt="Operating Systems" src="https://img.shields.io/badge/Operating%20Systems-Systems%20Programming-00599C?logoColor=white">
+  <img alt="GitHub" src="https://img.shields.io/badge/GitHub-181717?logo=github&logoColor=white">
+  <img alt="Markdown" src="https://img.shields.io/badge/Markdown-000000?logo=markdown&logoColor=white">
+</p>
+
 A comprehensive exploration of computer systems engineering through the Nand2Tetris curriculum, building a complete computer system from first principles.
 
 ---
